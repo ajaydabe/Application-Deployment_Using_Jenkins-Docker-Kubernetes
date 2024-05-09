@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ajaydabe/consultancy-website
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ajaydabe/consultancy-website
+  template:
+    metadata:
+      labels:
+        app: ajaydabe/consultancy-website
+    spec:
+      containers:
+        - name: consultancy-website-container
+          image: ajaydabe/consultancy-website
+          ports:
+            - containerPort: 82
