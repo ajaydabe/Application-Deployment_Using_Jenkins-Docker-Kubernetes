@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ajaydabe/consultancy-website
+  name: ajaydabeconsultancy-website
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: ajaydabe/consultancy-website
+      app: ajaydabeconsultancy-website
   template:
     metadata:
       labels:
-        app: ajaydabe/consultancy-website
+        app: ajaydabeconsultancy-website
     spec:
       containers:
         - name: consultancy-website-container
