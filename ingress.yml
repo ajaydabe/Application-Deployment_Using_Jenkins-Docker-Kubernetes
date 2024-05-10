@@ -10,9 +10,9 @@ spec:
   - http:
       paths:
       - path: /consultancy
-         pathType: Prefix
-         backend:
-           service:
-             name: ajaydabeconsultancy-website
-             port:
-                number: 82
+        pathType: Prefix
+        backend:
+          service:
+           name: ajaydabeconsultancy-website
+           port:
+            number: 82
